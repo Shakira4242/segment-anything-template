@@ -5,7 +5,7 @@
         "image":"Image as base64 string"
     },
     "example_output": {
-        "masks": [{"segmentation":""}, {"area":""}, {"bbox":""}, {"predicted_iou":""}, {"point_coords":""}, {"stability_score":""}, {"crop_box":""}]
+        "masks": [{"segmentation":[]}, {"area":9840}, {"bbox":[]}, {"predicted_iou":32}, {"point_coords":""}, {"stability_score":""}, {"crop_box":""}]
     },
     "version": "1"
   }
