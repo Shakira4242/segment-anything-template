@@ -1,9 +1,9 @@
-FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
+FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-devel
 
 WORKDIR /
 
 # Install git
-RUN apt-get update && apt-get install -y git wget
+RUN apt-get update && apt-get install -y git wget libgl1-mesa-glx libglib2.0-0
 
 # Install python packages
 RUN pip3 install --upgrade pip
