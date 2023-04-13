@@ -8,6 +8,6 @@ image = cv2.imread('banana.jpeg')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 image_string = base64.b64encode(cv2.imencode('.jpg', image)[1]).decode()
 
-out = banana.run("api_key","model_key",{"image":image_string})
+out = banana.run("9f9ce478-e635-439c-b701-a2a6ba6244d3","55c1d7a4-6076-44a9-9c1d-15f3f891cc3f",{"image":image_string})
 
 print(out)

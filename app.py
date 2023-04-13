@@ -18,5 +18,5 @@ def inference(model_inputs):
     img_original = base64.b64decode(image_string)
     img_as_np = np.frombuffer(img_original, dtype=np.uint8)
     image = cv2.imdecode(img_as_np, flags=1)
-    mode.set_image(image)
+    model.set_image(image)
     return {"embedding": model.get_image_embedding()}
