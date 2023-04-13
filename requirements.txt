@@ -5,5 +5,5 @@ matplotlib
 onnxruntime
 onnx
 numpy
-sanic==22.6.2
 websockets==10.0
+runpod

@@ -19,6 +19,9 @@ RUN wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
 # Add your custom app code, init() and inference()
 ADD app.py .
 
+# Add handler.py
+ADD handler.py .
+
 EXPOSE 8000
 
-CMD python3 -u server.py
+CMD python3 -u handler.py
