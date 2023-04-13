@@ -19,4 +19,5 @@ def inference(model_inputs):
     img_as_np = np.frombuffer(img_original, dtype=np.uint8)
     image = cv2.imdecode(img_as_np, flags=1)
     model.set_image(image)
-    return {"embedding": model.get_image_embedding()}
+    image_embedding = model.get_image_embedding().cpu().numpy()
+    return {"embedding": image_embedding}
