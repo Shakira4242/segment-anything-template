@@ -20,4 +20,4 @@ def inference(model_inputs):
     image = cv2.imdecode(img_as_np, flags=1)
     model.set_image(image)
     image_embedding = model.get_image_embedding().cpu().numpy()
-    return {"embedding": image_embedding}
+    return {"embedding": image_embedding.tolist()}
